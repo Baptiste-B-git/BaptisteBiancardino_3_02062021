@@ -1,0 +1,153 @@
+html,
+body {
+margin: 0;
+padding: 0;
+font-family: "Roboto";
+}
+
+@font-face {
+    font-family: 'Shrikhand';
+    src: url('fonts/Shrikhand-Regular.otf');
+    }
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+    }
+/*Logo*/
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0px 5px 6px 0px rgb(0 0 0 / 20%);
+    height: 80px;
+}
+.header_logo{
+    justify-content: center;
+    font-family: 'Shrikhand';
+    color: black;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/*Localisation*/
+.location{
+    display: flex;
+    justify-content: center;
+    background: #e7e7e7;
+    color: #424242;
+    align-items: center;
+}
+.fas.fa-map-maker-alt{
+    font-weight: 900;
+}
+.location_city{
+    margin-left: 13px;
+    font-weight: 700;
+}
+
+/*Exploration section*/
+.exploration_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f6f6f6;
+    padding: 50px;
+}
+.exploration_title{
+    max-width: 250px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.5em;
+}
+.exploration_text{
+    text-align: center;
+    color: #7a7a7a;
+}
+.exploration_button{
+    background: #e998f0;
+    background-image: -webkit-linear-gradient(top, #ff75f6, #9e75f5);
+    background-image: -moz-linear-gradient(top, #ff75f6, #9e75f5);
+    background-image: -ms-linear-gradient(top, #ff75f6, #9e75f5);
+    background-image: -o-linear-gradient(top, #ff75f6, #9e75f5);
+    background-image: linear-gradient(to bottom, #ff75f6, #9e75f5);
+    border-radius: 40px;
+    box-shadow: 1px 2px 6px #666666;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 1px 20px 1px 22px;
+    border: none;
+}
+      
+.exploration_button:hover {
+    opacity: 0.8;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(180deg);
+    cursor: pointer;
+    transition: 0.3s;
+}
+@mixin button-hover{
+    opacity: 0.8;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+@mixin button-style{
+    opacity: 1;
+    background: $gradient;
+    color: white;
+    padding: 0 20px;
+    border-radius: 200px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+/*Operation*/
+.operation_container{
+display: flex;
+justify-content: center;
+padding: 25px 0;
+}
+.operation{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 1200px;
+}
+
+.operation_title{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.operation_steps{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.operation_step{
+    display: flex;
+    align-items: center;
+    background: #f6f6f6;
+    margin: 10px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 16%);
+    width: 100%;
+}
+.operation_number{
+    background-color: #9356DC;
+    color: white;
+    position: absolute;
+    padding: 3px 8px 3px 8px;
+    border-radius: 500px;
+    transform: translateX(-50%);
+}
+.operation_icon{
+    color: #7E7E7E;
+    margin: 0 20px;
+}
+.operation_text {
+margin-right: 20px;
+}
