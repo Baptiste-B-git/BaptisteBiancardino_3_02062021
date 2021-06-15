@@ -2,6 +2,7 @@ html,
 body {
 margin: 0;
 padding: 0;
+overflow-x: hidden;
 font-family: "Roboto";
 }
 
@@ -13,6 +14,7 @@ font-family: "Roboto";
     font-family: 'Roboto';
     src: url('fonts/Roboto-Regular.ttf');
     }
+
 /*Logo*/
 .header{
     display: flex;
@@ -31,7 +33,6 @@ font-family: "Roboto";
 a{
     text-decoration: none;
 }
-
 /*Localisation*/
 .location{
     display: flex;
@@ -70,11 +71,11 @@ a{
 }
 .exploration_button{
     background: #e998f0;
-    background-image: -webkit-linear-gradient(top, #ff75f6, #9e75f5);
-    background-image: -moz-linear-gradient(top, #ff75f6, #9e75f5);
-    background-image: -ms-linear-gradient(top, #ff75f6, #9e75f5);
-    background-image: -o-linear-gradient(top, #ff75f6, #9e75f5);
-    background-image: linear-gradient(to bottom, #ff75f6, #9e75f5);
+    background-image: -webkit-linear-gradient(top, #FF79DA, #9356DC);
+    background-image: -moz-linear-gradient(top, #FF79DA, #9356DC);
+    background-image: -ms-linear-gradient(top, #FF79DA, #9356DC);
+    background-image: -o-linear-gradient(top, #FF79DA, #9356DC);
+    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
     border-radius: 40px;
     box-shadow: 1px 2px 6px #666666;
     color: #ffffff;
@@ -105,7 +106,7 @@ a{
     border-radius: 200px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
 }
-/*Operation*/
+/*Fonctionnement*/
 .operation_container{
 display: flex;
 justify-content: center;
@@ -127,6 +128,7 @@ padding: 25px 0;
     justify-content: center;
     flex-direction: row;
 }
+
 .operation_step{
     display: flex;
     align-items: center;
@@ -136,6 +138,15 @@ padding: 25px 0;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 16%);
     width: 100%;
 }
+
+.operation_step:hover{
+    opacity: 0.8;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(180deg);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
 .operation_number{
     background-color: #9356DC;
     color: white;
@@ -149,5 +160,95 @@ padding: 25px 0;
     margin: 0 20px;
 }
 .operation_text {
-margin-right: 20px;
+    margin-right: 20px;
+}
+
+/*Restaurants*/
+.restaurants{
+    display: flex;
+    background-color: #f6f6f6;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 20px;
+    
+}
+.restaurant_cards{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 20px 20px;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 30px auto;
+}
+.restaurant_card{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 30%);
+    height: 300px;
+}
+
+.restaurant_card-new{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color:green;
+    background: #99e2d0;
+    top: 20px;
+    right: 20px;
+}
+
+.restaurant_block-name{
+    color: black;
+}
+.restaurant_block-city{
+    color:black
+}
+
+/*footer*/
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #353535;
+}
+.footer_bloc{
+    display: inline;
+    padding: 0 40px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 15px;
+}
+.logo{
+    font-family: 'Shrikhand';
+    color: white;
+    font-size: 20px;
+    padding: 15px 0;
+}
+.footer_bloc-links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 900px;
+    width: auto;
+}
+a{
+    color: white;
+}
+.footer_bloc-link{
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+    height: 30px;
+    cursor: pointer;
 }
