@@ -5,7 +5,6 @@ padding: 0;
 overflow-x: hidden;
 font-family: "Roboto";
 }
-
 @font-face {
     font-family: 'Shrikhand';
     src: url('Shrikhand-Regular.otf');
@@ -30,7 +29,6 @@ font-family: "Roboto";
     color: black;
     margin: 0;
 }
-
 .header_arrow-back{
     width: 50px;
     height: 50px;
@@ -106,7 +104,6 @@ h3{
     bottom: -8px;
     margin-bottom: 50px;
 }
-
 .menu_grid_case{
     position: relative;
     cursor: pointer;
@@ -126,7 +123,6 @@ h3{
     justify-content: space-between;
     align-items: center;
 }
-
 .validation_box{
     display: none;
     position: absolute;
@@ -171,7 +167,6 @@ p{
     font-weight: bold;
     padding-left: 7px;
 }
-
 .contain_command-button{
     display: flex;
     justify-content: center;
@@ -194,7 +189,6 @@ p{
     padding: 13px 20px 10px 22px;
     border: none;
 }
-      
 .menu_command-button:hover {
     opacity: 0.8;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
@@ -202,8 +196,6 @@ p{
     cursor: pointer;
     transition: 0.3s;
 }
-
-
 
 /*footer*/
 .footer{
@@ -232,6 +224,7 @@ p{
 }
 a{
     color: white;
+    text-decoration: none;
 }
 .footer_bloc-link{
     display: inline-flex;
