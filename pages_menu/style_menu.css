@@ -161,8 +161,45 @@ h3{
     height: 70px;
     border-radius: 15px;
     background-color: white;
-    box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%)
+    box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%)	margin-left: 0px;
 }
+
+.validation_box{
+    display: none;
+    position: absolute;
+    background: #99E2D0;
+    border-radius: 0 15px 15px 0;
+    right: 0px;
+    padding: 0 13px;
+    height: 100%;
+}
+.fa-check-circle {
+    font-size: 30px;
+    color: white;
+    -webkit-transform: rotate(
+180deg
+);
+    transform: rotate(
+180deg
+);
+    -webkit-animation: rotate 0.5s both;
+    animation: rotate 0.5s both;
+}
+@keyframes .validation_box{
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(
+    360deg
+    );
+        transform: rotate(
+    360deg
+    );
+    }
+}
+
 
 #case-1 {
     opacity:0;
