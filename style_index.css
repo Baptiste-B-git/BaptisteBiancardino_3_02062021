@@ -139,20 +139,7 @@ a{
     cursor: pointer;
     transition: 0.3s;
 }
-@mixin button-hover{
-    opacity: 0.8;
-    cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-}
-@mixin button-style{
-    opacity: 1;
-    background: $gradient;
-    color: white;
-    padding: 0 20px;
-    border-radius: 200px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
-}
+
 /*Fonctionnement*/
 .operation_container{
 display: flex;
@@ -345,6 +332,15 @@ padding: 25px 0;
     width: 50px;
     position: relative;
     width: 30px;
+}
+.heart-empty::before {
+    content: "\f004";
+    font-weight: bold;
+    transition: color 1s ease-out;
+}
+.heart-empty:hover::before{
+    background-color: #9356DC;
+    cursor: pointer;
 }
 
 
