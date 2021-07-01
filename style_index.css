@@ -15,7 +15,7 @@ font-family: "Roboto";
     src: url('fonts/Roboto-Regular.ttf');
     }
 
-/*Loader de la page*/
+/*Loader spinner*/
 .loader{
     margin: auto;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -27,9 +27,8 @@ font-family: "Roboto";
     border-radius: 50%;
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    animation: spinner 4s linear;
-    animation-fill-mode: none;
-    animation-delay: 1s;
+    animation: spinner 2.5s linear;
+    z-index: -1;
 }
 @keyframes spinner{
     0%{
@@ -55,12 +54,10 @@ font-family: "Roboto";
         transform: rotate(760deg) scale(1);
         border-top-color: #FF79DA;
         border-bottom-color: #9356DC;
+        visibility: hidden;
         opacity: 0;
-        visibility: none;
     }
 }
-
-
 
 /*Logo*/
 .header{
