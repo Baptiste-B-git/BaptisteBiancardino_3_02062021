@@ -7,7 +7,6 @@
     grid-template-columns: 1fr;
     grid-gap: 20px;
 }
-}
 .menu_grid_bloc{
     flex-direction: column;
 }
@@ -22,7 +21,7 @@
 
 /*footer*/
 .footer_bloc-links{
-        display: inline-flex;
-        flex-direction: column;
-        width: auto;
+    display: inline-flex;
+    flex-direction: column;
+    width: auto;
 }
