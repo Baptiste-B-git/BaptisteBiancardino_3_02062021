@@ -146,6 +146,43 @@ h3{
     border-bottom: 4px solid #99e2d0;
     padding-bottom: 8px;
 }
+
+/*coeur*/
+.menu_heart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    width: 30px;
+}
+
+.heart-full {
+    position: absolute;
+    fill: url(#text-fill);
+    stroke: none;
+}
+
+.heart {
+    width: 30px;
+    stroke-width: 30;
+    stroke: black;
+    fill: white;
+    cursor: pointer;
+}
+
+.heart-empty {
+    width: 50px;
+    position: relative;
+    width: 30px;
+}
+
+.heart:hover{
+
+}
+
+/*coeur*/
+
+
 .menu_grid_title{
     width: 50px;
     z-index: 20;

@@ -25,10 +25,9 @@ font-family: "Roboto";
     border-top-color: #FF79DA;
     border-bottom-color: #9356DC;
     border-radius: 50%;
-    position: absolute;
+    position: fixed;
     top: 0; left: 0; right: 0; bottom: 0;
     animation: spinner 2.5s linear;
-    z-index: -1;
 }
 @keyframes spinner{
     0%{
@@ -115,7 +114,7 @@ a{
 }
 
 .exploration_button{
-    background: #e998f0;
+    background-color: #e998f0;
     background-image: -webkit-linear-gradient(top, #FF79DA, #9356DC);
     background-image: -moz-linear-gradient(top, #FF79DA, #9356DC);
     background-image: -ms-linear-gradient(top, #FF79DA, #9356DC);
@@ -129,11 +128,11 @@ a{
     padding: 1px 20px 1px 22px;
     border: none;
 }
-      
+
 .exploration_button:hover {
     opacity: 0.8;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-    background: linear-gradient(180deg);
+    background-color: linear-gradient(180deg);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -297,24 +296,6 @@ padding: 25px 0;
 }
 
 /*coeur*/
-.fa.fa-heart-o {
-    color: #FFF;
-    background-color: #000;
-    border-radius: 50%;
-    padding:.2em;
-    
-}
-.fa-heart-o::before {
-    content: "\f004";
-    font-weight: bold;
-    transition: color 1s ease-out;
-}
-.fa-heart-o:hover::before{
-    color: #9356DC;
-    cursor: pointer;
-}
-
-/*coeur TEST*/
 .heart-full {
     position: absolute;
     fill: url(#text-fill);
@@ -333,18 +314,8 @@ padding: 25px 0;
     width: 50px;
     position: relative;
     width: 30px;
+    margin-right: 20px;
 }
-.heart-empty::before {
-    content: "\f004";
-    font-weight: bold;
-    transition: color 1s ease-out;
-}
-.heart-empty:hover::before{
-    background-color: #9356DC;
-    cursor: pointer;
-}
-
-
 
 /*footer*/
 .footer{
