@@ -177,9 +177,8 @@ h3{
 }
 
 .heart:hover{
-
+    fill:#FF79DA
 }
-
 /*coeur*/
 
 
@@ -203,15 +202,13 @@ h3{
 
 /*slide*/
 .validation_box{
-    display: none;
-    position: absolute;
+
     background: #99E2D0;
     border-radius: 0 15px 15px 0;
     right: 0px;
     padding: 0 13px;
     height: 100%;
     cursor: pointer;
-
 }
 .fa-check-circle {
     font-size: 30px;
@@ -260,6 +257,7 @@ h3{
     top: 0;
     opacity: 0;
     transition: transform 330ms ease-in-out;
+    animation: slide-left 0.5s ease;
   }
 
 
@@ -382,8 +380,8 @@ p{
     font-weight: bold;
     padding-left: 7px;
 }
-.menu_case_price:hover {
-    padding-right: 70px;
+.menu_grid_case:hover {
+    padding-left: 70px;
     transition: 0.5s ease ;
 }
 
