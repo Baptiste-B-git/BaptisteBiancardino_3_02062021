@@ -22,10 +22,10 @@ font-family: "Roboto";
     border: 16px solid white;
     width: 100px;
     height: 100px;
-    border-top-color: #FF79DA;
-    border-bottom-color: #9356DC;
+    border-top-color: white;
+    border-bottom-color: white;
     border-radius: 50%;
-    position: fixed;
+    position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     animation: spinner 2.5s linear;
 }
@@ -310,11 +310,15 @@ padding: 25px 0;
     cursor: pointer;
 }
 
-.heart-empty {
+.heart-empty{
     width: 50px;
     position: relative;
     width: 30px;
     margin-right: 20px;
+}
+
+.heart:hover{
+    fill:#FF79DA;
 }
 
 /*footer*/
