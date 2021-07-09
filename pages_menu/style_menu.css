@@ -198,7 +198,8 @@ h3{
 
 /*slide*/
 .validation_box{
-
+    transition: margin-right 500ms;
+    margin-right: -60px;
     background: #99E2D0;
     border-radius: 0 15px 15px 0;
     right: 0px;
@@ -207,23 +208,29 @@ h3{
     cursor: pointer;
 }
 .fa-check-circle {
+    padding: 20px 0;
     font-size: 30px;
     color: white;
     transform: rotate(180deg);
     animation: rotate 0.5s both;
 }
-.fa-check-circle:before {
-    content: "\f058";
-}
-@keyframes validation_box{
+@keyframes rotate{
     0% {
         -webkit-transform: rotate(0);
         transform: rotate(0);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
     }
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg);
     }
+}
+
+.fa-check-circle:before {
+    content: "\f058";
 }
 
 .validation_box:hover{
@@ -236,80 +243,16 @@ h3{
     height: 100%;
     cursor: pointer;
 }
-
-/*slide TEST*/
-.cross {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #99E2D0;
-    width: 50px;
-    height: 63px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    position: absolute;
-    padding: 20px;
-    right: -50px;
-    top: 0;
-    opacity: 0;
-    transition: transform 330ms ease-in-out;
-    animation: slide-left 0.5s ease ;
-  }
-
-/*slide TEST 2*/
-  .menu--check {
-    background-color: #99E2D0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    width: 50px;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    padding: 0 13px;
-    margin-right: -80px;
-    -webkit-transition: all 0.6s ease-in-out;
-    -o-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out;
-}
-.menu--check i {
-    color: #ffffff;
-    -webkit-transition: -webkit-transform 0.4s ease-in;
-    transition: -webkit-transform 0.4s ease-in;
-    -o-transition: transform 0.4s ease-in;
-    transition: transform 0.4s ease-in;
-    transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
-    -webkit-transition-delay: 0.1s;
-    -o-transition-delay: 0.1s;
-    transition-delay: 0.1s;
-}
-.fa-check-circle:before {
-    content: "\f058";
-}
-
-/*A enlever*/
-.menu_grid_case{
-    animation: load 500ms ease-in-out forwards;
-}
-
-@keyframes load{
+@keyframes validation_box{
     0% {
-        opacity: 0;
-        -webkit-transform: translateY(50px);
-        transform: translateY(50px);
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
     }
-    
     100% {
-        opacity: 1;
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
-/*A enlever*/
-
 
 
 #case-1 {
