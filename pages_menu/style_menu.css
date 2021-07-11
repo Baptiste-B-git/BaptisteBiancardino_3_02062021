@@ -198,8 +198,7 @@ h3{
 
 /*slide*/
 .validation_box{
-    transition: margin-right 500ms;
-    margin-right: -60px;
+    display: none;
     background: #99E2D0;
     border-radius: 0 15px 15px 0;
     right: 0px;
@@ -234,8 +233,7 @@ h3{
 }
 
 .validation_box:hover{
-    animation: slide-left 0.5s ease ;
-    transform-origin: right;
+    transform-origin: left;
     background: #99E2D0;
     border-radius: 0 15px 15px 0;
     right: 0px;
