@@ -7,11 +7,11 @@ font-family: "Roboto";
 }
 @font-face {
     font-family: 'Shrikhand';
-    src: url('Shrikhand-Regular.otf');
+    src: url('/fonts/Shrikhand-Regular.otf');
     }
 @font-face {
     font-family: 'Roboto';
-    src: url('Roboto-Regular.ttf');
+    src: url('/fonts/Roboto-Regular.ttf');
     }
 
 /*test*/
@@ -198,58 +198,34 @@ h3{
 
 /*slide*/
 .validation_box{
+    margin-right: -60px;
+    transition: margin-right 500ms;
     background: #99E2D0;
     border-radius: 0 15px 15px 0;
     right: 0px;
-    padding: 0 13px;
+    width: 60px;
     height: 100%;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+.menu_grid_case:hover .validation_box{
+    margin-right: 0;
+}
+
 .fa-check-circle {
-    padding: 20px 0;
     font-size: 30px;
     color: white;
-    transform: rotate(180deg);
-    animation: rotate 0.5s both;
+    transform: rotate(0deg);
+    transition: transform 500ms;
 }
-@keyframes rotate{
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
-    50% {
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+.menu_grid_case:hover i{
+    transform: rotate(-360deg);
 }
 
-.fa-check-circle:before {
-    content: "\f058";
-}
-
-.validation_box:hover{
-    transform-origin: left;
-    background: #99E2D0;
-    border-radius: 0 15px 15px 0;
-    right: 0px;
-    padding: 0 13px;
-    height: 100%;
-    cursor: pointer;
-}
-@keyframes validation_box{
-    0% {
-        -webkit-transform: rotate(0);
-        transform: rotate(0);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
 
 
 #case-1 {
@@ -356,6 +332,7 @@ h3{
     margin-left: 20px;
     white-space: nowrap;
     overflow: hidden;
+    /* max-width: 220px; */
 }
 p{
     margin: 0;
