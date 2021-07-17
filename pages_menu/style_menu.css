@@ -97,6 +97,7 @@ h3{
     padding-bottom: 8px;
 }
 
+
 /*coeur*/
 .heart-full {
     position: absolute;
@@ -132,29 +133,53 @@ h3{
     width: 50px;
     z-index: 20;
 }
-.menu_grid_case{
-    position: relative;
-    cursor: pointer;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    border-radius: 15px;
+
+.menu_grid_card{
     background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
     box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
 }
-
-/*slide*/
+.menu_grid_card_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.menu_grid_card_column:nth-child(1){
+    padding: 1rem 0 1rem 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+}
+.menu_grid_card_column:nth-child(1) > *{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.menu_grid_card_column:nth-child(2){
+    padding: 1rem;
+    justify-content: flex-end;
+}
+.menu_case_text-title{
+    font-weight: bold;
+}
+.menu_case_price{
+    font-weight: bold;
+}
+.menu_case_price-test{
+    font-weight: bold;
+    padding-bottom: 10px;
+}
 .validation_box{
     margin-right: -60px;
     transition: margin-right 500ms;
     background: #99E2D0;
-    border-radius: 0 15px 15px 0;
-    right: 0px;
     width: 60px;
-    height: 100%;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -162,7 +187,7 @@ h3{
     align-items: center;
 }
 
-.menu_grid_case:hover .validation_box{
+.menu_grid_card:hover .validation_box{
     margin-right: 0;
 }
 
@@ -172,39 +197,13 @@ h3{
     transform: rotate(0deg);
     transition: transform 500ms;
 }
-.menu_grid_case:hover i{
+.menu_grid_card:hover i{
     transform: rotate(-360deg);
 }
 
-.text-and-price{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.menu_case_text{
-    margin-left: 20px;
-    white-space: wrap;
-    overflow: hidden;
-    /* max-width: 220px; */
-}
+/*slide*/
 p{
     margin: 0;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
-.menu_case_text-title{
-    font-weight: bold;
-    white-space: wrap;
-}
-.menu_case_subtitle{
-    white-space: wrap;
-}
-.menu_case_price{
-    padding-right: 20px;
-    font-weight: bold;
-    padding-left: 7px;
 }
 
 /* Animation des cases */
@@ -369,7 +368,6 @@ a{
     color: white;
     height: 30px;
     cursor: pointer;
-
 }
 .footer_bloc-link:hover{
     text-decoration: underline;
