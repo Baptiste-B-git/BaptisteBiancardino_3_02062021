@@ -8,12 +8,12 @@ body {
 
 @font-face {
   font-family: 'Shrikhand';
-  src: url("/fonts/Shrikhand-Regular.otf");
+  src: url("../fonts/Shrikhand-Regular.otf");
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("/fonts/Roboto-Regular.ttf");
+  src: url("../fonts/Roboto-Regular.ttf");
 }
 
 /*Logo*/
@@ -124,7 +124,7 @@ body {
 .menu_grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
