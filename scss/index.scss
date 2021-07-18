@@ -14,7 +14,6 @@ $gradient: linear-Gradient(180deg, rgba(255,121,218,1) 0%, rbga(147,86,220,1) 10
     @return $pastel
 }
 
-
 @mixin flexbox-center{
     display: flex;
     justify-content: center;
@@ -31,11 +30,11 @@ $gradient: linear-Gradient(180deg, rgba(255,121,218,1) 0%, rbga(147,86,220,1) 10
 
 @mixin button-style{
     background-color: #e998f0;
-    background-image: -webkit-linear-gradient(top, #FF79DA, #9356DC);
-    background-image: -moz-linear-gradient(top, #FF79DA, #9356DC);
-    background-image: -ms-linear-gradient(top, #FF79DA, #9356DC);
-    background-image: -o-linear-gradient(top, #FF79DA, #9356DC);
-    background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+    background-image: -webkit-linear-gradient(top, $color-secondary, $color-primary);
+    background-image: -moz-linear-gradient(top, $color-secondary, $color-primary);
+    background-image: -ms-linear-gradient(top, $color-secondary, $color-primary);
+    background-image: -o-linear-gradient(top, $color-secondary, $color-primary);
+    background-image: linear-gradient(to bottom, $color-secondary, $color-primary);
     border-radius: 40px;
     box-shadow: 1px 2px 6px #666666;
     color: #ffffff;
@@ -203,11 +202,11 @@ a{
     }
     &_button{
         background-color: #e998f0;
-        background-image: -webkit-linear-gradient(top, #FF79DA, #9356DC);
-        background-image: -moz-linear-gradient(top, #FF79DA, #9356DC);
-        background-image: -ms-linear-gradient(top, #FF79DA, #9356DC);
-        background-image: -o-linear-gradient(top, #FF79DA, #9356DC);
-        background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+        background-image: -webkit-linear-gradient(top, $color-secondary, $color-primary);
+        background-image: -moz-linear-gradient(top, $color-secondary, $color-primary);
+        background-image: -ms-linear-gradient(top, $color-secondary, $color-primary);
+        background-image: -o-linear-gradient(top, $color-secondary, $color-primary);
+        background-image: linear-gradient(to bottom, $color-secondary, $color-primary);
         border-radius: 40px;
         box-shadow: 1px 2px 6px #666666;
         color: #ffffff;
@@ -268,7 +267,7 @@ a{
 
     }
     &_number{
-        background-color: #9356DC;
+        background-color: $color-primary;
         color: white;
         position: absolute;
         padding: 3px 8px 3px 8px;
@@ -320,7 +319,7 @@ a{
         height: auto;
         width: 100%;
         &:hover{
-            box-shadow: 1px 2px 8px #9356DC;
+            box-shadow: 1px 2px 8px $color-primary;
             z-index: 2;
             transition: all 0.5s 0s linear;
             transform: scale(1.02);
@@ -341,7 +340,7 @@ a{
             justify-content: center;
             position: absolute;
             color:green;
-            background: #99e2d0;
+            background: $color-tertiary;
             top: 20px;
             right: 20px;
             width: 100px;
