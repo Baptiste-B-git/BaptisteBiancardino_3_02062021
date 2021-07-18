@@ -7,12 +7,12 @@ body {
 }
 
 @font-face {
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   src: url("../fonts/Shrikhand-Regular.otf");
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   src: url("../fonts/Roboto-Regular.ttf");
 }
 
