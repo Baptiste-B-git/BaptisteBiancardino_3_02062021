@@ -1,5 +1,4 @@
 /* STYLE SASS */
-
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
@@ -237,6 +236,9 @@ a{
         display: flex;
         justify-content: center;
         padding: 25px 0;
+        @media (max-width: 800px){
+            padding: 20px;
+        }
     }
     &_title{
         font-weight: bold;
@@ -247,6 +249,10 @@ a{
         justify-content: center;
         flex-direction: row;
         font-weight: 600;
+        @media (max-width: 800px){
+            flex-direction: column;
+            width: 95%;
+        }
     }
     &_step{
         display: flex;
@@ -294,6 +300,10 @@ a{
     align-items: flex-start;
     margin: 0 auto;
     max-width: 1200px;
+    @media (max-width: 800px){
+        flex-direction: column;
+        padding: 20px;
+    }
     &_title{
         margin-top: 20px;
         margin-bottom: 0;
@@ -307,6 +317,14 @@ a{
         gap: 20px 20px;
         max-width: 1200px;
         margin: 30px auto;
+        @media (max-width: 800px){
+            display: grid;
+            -ms-grid-rows: 1fr [4];
+            grid-template-rows: repeat(4, 1fr);
+            -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
     }
     &_card{
         position:relative;
@@ -387,8 +405,6 @@ a{
     &-full {
         position: absolute;
     }
-    &-empty{
-    }
     &:hover{
         fill: url(#text-fill);
         stroke: url(#text-fill);
@@ -416,6 +432,16 @@ a{
             display: flex;
             justify-content: space-between;
             max-width: 900px;
+            @media (max-width: 800px){
+                display: -webkit-inline-box;
+                display: -ms-inline-flexbox;
+                display: inline-flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                width: auto;
+            }
         }
         &-link{
             display: inline-flex;
