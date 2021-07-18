@@ -22,7 +22,6 @@ $gradient: linear-Gradient(180deg, rgba(255,121,218,1) 0%, rbga(147,86,220,1) 10
 @mixin button-hover{
     opacity: 0.8;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-    background-color: linear-gradient(180deg);
     cursor: pointer;
     transition: 0.3s;
 }
@@ -214,11 +213,7 @@ a{
         padding: 1px 20px 1px 22px;
         border: none;
         &:hover{
-            opacity: 0.8;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-            background-color: linear-gradient(180deg);
-            cursor: pointer;
-            transition: 0.3s;
+            @include button-hover;
         }
     }
 }

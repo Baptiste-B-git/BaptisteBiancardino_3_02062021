@@ -96,7 +96,7 @@ font-family: "Roboto";
         grid-gap: 40px;
         @media (max-width: 1024px) {
             display: grid;
-            -ms-grid-rows: 1fr [3];
+            -ms-grid-rows: (3, 1fr);
             grid-template-rows: repeat(3, 1fr);
             -ms-grid-columns: 1fr;
             grid-template-columns: 1fr;
@@ -288,6 +288,14 @@ p{
         -ms-animation: anim 1s linear forwards 1.7s;
         animation: anim 1s linear forwards 1.7s;
     }
+    &-10 {
+        opacity:0;
+        -moz-animation: anim 1s linear forwards 1.9s;
+        -webkit-animation: anim 1s linear forwards 1.9s;
+        -o-animation: anim 1s linear forwards 1.9s;
+        -ms-animation: anim 1s linear forwards 1.9s;
+        animation: anim 1s linear forwards 1.9s;
+    }
 }
 @-moz-keyframes anim {
     0%  {opacity:0;}
@@ -335,7 +343,6 @@ p{
     &:hover {
         opacity: 0.8;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-        background: linear-gradient(180deg);
         cursor: pointer;
         transition: 0.3s;
     }

@@ -124,7 +124,7 @@ body {
 .menu_grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: 1fr;
       grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
@@ -135,7 +135,7 @@ body {
   .menu_grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 1fr [3];
+    -ms-grid-rows: 3, 1fr;
     grid-template-rows: repeat(3, 1fr);
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -363,6 +363,12 @@ p {
   animation: anim 1s linear forwards 1.7s;
 }
 
+#case-10 {
+  opacity: 0;
+  -webkit-animation: anim 1s linear forwards 1.9s;
+  animation: anim 1s linear forwards 1.9s;
+}
+
 @-webkit-keyframes anim {
   0% {
     opacity: 0;
@@ -414,8 +420,6 @@ p {
   opacity: 0.8;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
           box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-  background: -webkit-gradient(linear, left top, left bottom, );
-  background: linear-gradient(180deg);
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
