@@ -9,8 +9,7 @@ $gradient: linear-Gradient(180deg, rgba(255,121,218,1) 0%, rbga(147,86,220,1) 10
     $sat: 100%;
     $light: 95%;
     $pastel: hsl($hue, $sat, $light);
-
-    @return $pastel
+    @return $pastel;
 }
 
 @mixin flexbox-center{
@@ -144,8 +143,8 @@ font-family: "Roboto";
 
 .header{
     @include flexbox-center;
-    position: relative;
     @include box-shadow-header;
+    position: relative;
     height: 80px;
     &_logo{
         justify-content: center;
@@ -161,11 +160,9 @@ a{
 
 /*Localisation*/
 .location{
-    display: flex;
-    justify-content: center;
+    @include flexbox-center;
     background: #e7e7e7;
     color: #424242;
-    align-items: center;
     &_city{
         margin-left: 13px;
     font-weight: 700;
@@ -178,9 +175,7 @@ a{
 /*Exploration section*/
 .exploration{
     &_container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexbox-center;
         flex-direction: column;
         background-color: #f6f6f6;
         padding: 50px;
@@ -295,10 +290,6 @@ a{
     margin: 0 auto;
     max-width: 1200px;
     padding: 25px;
-    @media (max-width: 800px){
-        flex-direction: column;
-        padding: 20px;
-    }
     &_title{
         margin-top: 20px;
         margin-bottom: 0;
@@ -349,9 +340,7 @@ a{
             height: 190px;
         }
         &-new{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexbox-center;
             position: absolute;
             color:green;
             background: $color-tertiary;
@@ -375,9 +364,7 @@ a{
             font-weight: 700;
         }
         &-heart{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexbox-center;
             margin-right: 20px;
             width: 30px;
             position: relative;
@@ -411,9 +398,7 @@ a{
 
 /*footer*/
 .footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox-center;
     width: 100%;
     background-color: #353535;
     &_bloc{

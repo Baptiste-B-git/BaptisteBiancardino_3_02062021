@@ -3,6 +3,12 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $gradient: linear-Gradient(180deg, rgba(255,121,218,1) 0%, rbga(147,86,220,1) 100%);
 
+@mixin flexbox-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 html,
 body {
 margin: 0;
@@ -20,9 +26,7 @@ font-family: "Roboto";
     }
 /*Logo*/
 .header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox-center
     position: relative;
     box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);
     height: 80px;
@@ -64,9 +68,7 @@ font-family: "Roboto";
 /*Menu*/
 #menu{
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox-center;
 }
 .menu{
     padding: 0 20px;
@@ -178,10 +180,8 @@ font-family: "Roboto";
     background: $color-tertiary;
     width: 60px;
     cursor: pointer;
-    display: flex;
+    @include flexbox-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 h3{
     position: relative;
@@ -320,26 +320,24 @@ p{
 
  /* Bouton commander */
  .contain_command-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox-center;
     width: 100%;
 }
 .menu_command-button{
-    margin: 50px 0;
-    background: #e998f0;
-    background-image: -webkit-linear-gradient(top, $color-secondary, $color-primary);
-    background-image: -moz-linear-gradient(top, $color-secondary, $color-primary);
-    background-image: -ms-linear-gradient(top, $color-secondary, $color-primary);
-    background-image: -o-linear-gradient(top, $color-secondary, $color-primary);
-    background-image: linear-gradient(to bottom, $color-secondary, $color-primary);
-    border-radius: 40px;
-    box-shadow: 1px 2px 6px #666666;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 300;
-    padding: 13px 20px 10px 22px;
-    border: none;
+        margin: 50px 0;
+        background: #e998f0;
+        background-image: -webkit-linear-gradient(top, $color-secondary, $color-primary);
+        background-image: -moz-linear-gradient(top, $color-secondary, $color-primary);
+        background-image: -ms-linear-gradient(top, $color-secondary, $color-primary);
+        background-image: -o-linear-gradient(top, $color-secondary, $color-primary);
+        background-image: linear-gradient(to bottom, $color-secondary, $color-primary);
+        border-radius: 40px;
+        box-shadow: 1px 2px 6px #666666;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 300;
+        padding: 13px 20px 10px 22px;
+        border: none;
     &:hover {
         opacity: 0.8;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
@@ -349,9 +347,7 @@ p{
 }
 /*footer*/
 .footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox-center;
     width: 100%;
     background-color: #353535;
     &_bloc{
