@@ -175,12 +175,12 @@ font-family: "Roboto";
 }
 
 .validation_box{
+    @include flexbox-center;
     margin-right: -60px;
     transition: margin-right 500ms;
     background: $color-tertiary;
     width: 60px;
     cursor: pointer;
-    @include flexbox-center;
     flex-direction: column;
 }
 h3{
